@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Água e Esgoto - IFPR Foz do Iguaçu</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 16px;
+            text-align: center;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .dashboard-wrapper {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* proporção 16:9 */
+        }
+
+        .dashboard-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .fallback {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .fallback a {
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            font-size: 12px;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Dashboard de Água e Esgoto</h1>
+    <p>IFPR - Campus Foz do Iguaçu</p>
+</header>
+
+<div class="container">
+
+    <div class="dashboard-wrapper">
+        <iframe 
+            src="https://lookerstudio.google.com/reporting/8f7ab709-85b2-4f93-955d-ac5624a27475"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <div class="fallback">
+        <p>Se o dashboard não carregar, acesse diretamente:</p>
+        <a href="https://lookerstudio.google.com/reporting/8f7ab709-85b2-4f93-955d-ac5624a27475" target="_blank">
+            Abrir Dashboard no Looker Studio
+        </a>
+    </div>
+
+</div>
+
+<footer>
+    Projeto de Pesquisa - Sustentabilidade IFPR
+</footer>
+
+</body>
+</html>
